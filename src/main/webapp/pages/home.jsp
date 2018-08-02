@@ -9,7 +9,7 @@ ${msg}
 
 Full Name   :<input type="text" name="name"/></br>
 Email       :<input type="text" name="email"/></br>
-Mobile      :<input type="text" name="mobile"/></br>
+mobilenumber:<input type="text" name="mobilenumber"/></br>
 Password    :<input type="password" name="password"/></br>
 <input type="submit" value="Register"/>
 </form>

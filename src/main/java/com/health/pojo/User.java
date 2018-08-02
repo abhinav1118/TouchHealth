@@ -1,6 +1,8 @@
 package com.health.pojo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -9,10 +11,16 @@ import javax.persistence.Table;
 public class User {
 
 	@Id
+	@Column
+	@GeneratedValue
 	private Integer userId;
+	@Column
 	private String name;
+	@Column
 	private String email;
-	private String mobileNumber;
+	@Column(name="mobilenumber")
+	private Long mobilenumber;
+	@Column
 	private String password;
 
 	public Integer getUserId() {
@@ -39,12 +47,15 @@ public class User {
 		this.email = email;
 	}
 
-	public String getMobileNumber() {
-		return mobileNumber;
+	
+
+
+	public Long getMobilenumber() {
+		return mobilenumber;
 	}
 
-	public void setMobileNumber(String mobileNumber) {
-		this.mobileNumber = mobileNumber;
+	public void setMobilenumber(Long mobilenumber) {
+		this.mobilenumber = mobilenumber;
 	}
 
 	public String getPassword() {

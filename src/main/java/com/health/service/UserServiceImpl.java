@@ -15,9 +15,12 @@ public class UserServiceImpl  implements UserService{
 	private Validation val;
 	
 	public String RegisterUser(User user) {
-		if(val.isValidEmail(user.getEmail())&&val.isValidMobile(user.getMobileNumber())) {
-		Integer registerUser = userdao.RegisterUser(user);
-}
+		System.out.println("Entered Into RegisterUser:servce");
+		if(val.isValidEmail(user.getEmail())) {
+			 Integer registerUser = userdao.RegisterUser(user);
+		}
+		System.out.println("Entered Into RegisterUser::Userservice");
+
 		return "home";
 	}
 }

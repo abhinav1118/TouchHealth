@@ -11,14 +11,14 @@ public class Validation {
 				return false;
 			}
 		}
-		public static boolean isValidMobile(String mobile){
+		/*public static boolean isValidMobile(Long mobile){
 			if(mobile!=null){
 			String MOBILE_REGEX="\\d{10}";
 		return mobile.matches(MOBILE_REGEX);
 			}else{
 				return false;
 			}
-		}
+		}*/
 		public static boolean isValidPassword(String password){
 			if(password!=null){
 			String PASSWORD_REGEX= "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";
