@@ -1,7 +1,14 @@
 package com.health.pojo;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="patient_table")
 public class User {
 
+	@Id
 	private Integer userId;
 	private String name;
 	private String email;

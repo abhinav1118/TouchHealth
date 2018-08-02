@@ -1,6 +1,8 @@
 package com.health.dao;
 
+import com.health.pojo.User;
+
 public interface UserDao {
 
-	public void RegisterUser();
+	public Integer RegisterUser(User user);
 }
