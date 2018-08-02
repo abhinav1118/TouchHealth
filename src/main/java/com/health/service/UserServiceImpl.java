@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 
 import com.health.controller.UserControllerImpl;
 import com.health.dao.UserDao;
+import com.health.pojo.Doctor;
 import com.health.pojo.User;
 import com.health.validation.Validation;
 import org.apache.log4j.Logger;
@@ -27,5 +28,11 @@ public class UserServiceImpl  implements UserService{
 		
 
 		return "home";
+	}
+
+	public String RegisterDoctor(Doctor doctor) {
+		// TODO Auto-generated method stub
+		
+		return null;
 	}
 }
