@@ -19,7 +19,7 @@ public class User {
 	@Column
 	private String email;
 	@Column(name="mobilenumber")
-	private Long mobilenumber;
+	private String mobilenumber;
 	@Column
 	private String password;
 
@@ -50,11 +50,13 @@ public class User {
 	
 
 
-	public Long getMobilenumber() {
+	
+
+	public String getMobilenumber() {
 		return mobilenumber;
 	}
 
-	public void setMobilenumber(Long mobilenumber) {
+	public void setMobilenumber(String mobilenumber) {
 		this.mobilenumber = mobilenumber;
 	}
 
