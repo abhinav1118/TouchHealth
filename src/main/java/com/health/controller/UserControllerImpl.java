@@ -7,10 +7,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.health.pojo.User;
 import com.health.service.UserService;
+import org.apache.log4j.Logger;
 
 @Controller
 public class UserControllerImpl implements UserController{
- 
+	final static Logger logger = Logger.getLogger(UserControllerImpl.class);
+
 	@Autowired
 	private  UserService userservice;
 	
