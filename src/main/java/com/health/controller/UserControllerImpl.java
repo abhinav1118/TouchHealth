@@ -19,7 +19,7 @@ public class UserControllerImpl implements UserController{
 	@RequestMapping(value = "/regUser", method = RequestMethod.POST)
 	public String RegisterUser(User user) {
 		System.out.println(user.getMobilenumber());
-		System.out.println("Entered Into RegisterUser::UserController");
+		logger.info("Entered Into RegisterUser::UserController");
 		String registerUser = userservice.RegisterUser(user);
 		return registerUser;
 	}

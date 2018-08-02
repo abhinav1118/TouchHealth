@@ -13,7 +13,8 @@ public class UserDaoImpl implements UserDao {
 	final static Logger logger = Logger.getLogger(UserDaoImpl.class);
 
 	public Integer RegisterUser(User user) {
-		System.out.println("Entered Into RegisterUser::UserDAo");
+		
+		logger.info("Entered Into RegisterUser::UserDAo");
 		Session session = HibernateUtility.getSessionFactory().openSession();
 		
 		Serializable save = session.save(user);

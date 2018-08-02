@@ -19,11 +19,12 @@ public class UserServiceImpl  implements UserService{
 	private Validation val;
 	
 	public String RegisterUser(User user) {
-		System.out.println("Entered Into RegisterUser:servce");
+		
+		logger.info("Entered Into RegisterUser:service");
 		if(val.isValidEmail(user.getEmail())) {
 			 Integer registerUser = userdao.RegisterUser(user);
 		}
-		System.out.println("Entered Into RegisterUser::Userservice");
+		
 
 		return "home";
 	}
